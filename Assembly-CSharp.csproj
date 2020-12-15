@@ -55,13 +55,14 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\QuestManager.cs" />
     <Compile Include="Assets\Scripts\Quest.cs" />
-    <Compile Include="Assets\Scripts\QuestGiver.cs" />
-    <Compile Include="Assets\Scripts\MovementController.cs" />
+    <Compile Include="Assets\Scripts\QuestManager.cs" />
     <Compile Include="Assets\Scripts\QuestObject.cs" />
-    <Compile Include="Assets\Scripts\Quests\CollectRedCubes.cs" />
-    <Compile Include="Assets\Scripts\QuestGivers\BlackQubeQuestGiver.cs" />
+    <Compile Include="Assets\Scripts\MovementController.cs" />
+    <Compile Include="Assets\Scripts\QuestGiver.cs" />
+    <Compile Include="Assets\Scripts\RedCubeContainer.cs" />
+    <Compile Include="Assets\Scripts\QuestGivers\RedQubeQuestGiver.cs" />
+    <Compile Include="Assets\Scripts\Quests\CollectRedCubesQuest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

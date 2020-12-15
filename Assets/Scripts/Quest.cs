@@ -2,41 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Quest : MonoBehaviour
+public class Quest
 {
     public Quest()
     {
         questId = idGenerator;
         idGenerator++;
-
     }
 
     static int idGenerator = 0;
-    int questId;
+    public int questId;
     public string questName;
     public int reward;
     public string description;
+    public int? numberOfTargets;
+    public bool isFinished = false;
 
     public virtual void OnFinished()
     {
         //dźwięk
+        isFinished = true;     
     }
 
-    public virtual void OnStart()
+    public virtual void OnStart(int? numberOfTargets)
     {
         //dźwięk
-        Debug.Log("Kot");
     }
 
     public virtual void OnUpdate()
     {
         //dźwięk
     }
-
-
-
-
-
-
-
 }
